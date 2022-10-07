@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/15fd6e7be0.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <title>JS Project - The Wizard Game</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1><i class="fa-solid fa-hat-wizard hatColor"></i> The Wizard's<span style="color: #49b675;"> DUEL</span>
+        <i class="fa-solid fa-hat-wizard hatColor"></i></h1>
+    <p>2 Wizards | 1 Winner<br><i class="fa-solid fa-arrow-right"></i> <span>First to reach 5 points win</span> <i class="fa-solid fa-arrow-left"></i></p>
+    <p>
+      <span class="fireColor"><i class="fa-solid fa-fire fireColor"></i> Fire</span> beats <span class="leafColor">Leaf <i class="fa-solid fa-leaf leafColor"></i></span>
+      <br />
+      <span class="leafColor"><i class="fa-solid fa-leaf leafColor"></i> Leaf</span> beats <span class="waterColor">Water <i class="fa-solid fa-droplet waterColor"></i></span>
+      <br />
+      <span class="waterColor"><i class="fa-solid fa-droplet waterColor"></i> Water</span> beats <span class="fireColor">Fire <i class="fa-solid fa-fire fireColor"></i></span>
+    </p>
+  </header>
+
+  <main class="mainContent">
+    <div class="instDiv">
+      <p><i class="fa-solid fa-arrow-down"></i> Choose a spell! <i class="fa-solid fa-arrow-down"></i></p>
+    </div>
+    <div class="spellsContent">
+      <button class="fireButton spellButton" id="Fire">
+        <i class="fa-solid fa-fire spellIcon fireIcon"></i>
+      </button>
+      <button class="waterButton spellButton" id="Water">
+        <i class="fa-solid fa-droplet spellIcon waterIcon"></i>
+      </button>
+      <button class="leafBUtton spellButton" id="Leaf">
+        <i class="fa-solid fa-leaf spellIcon leafIcon"></i>
+      </button>
+    </div>
+
+    <div class="duelSpell">
+        <div class="duelItem">
+                    <p class="cSpellTitle">Your Spell</p>
+
+          <i class="fa-solid fa-spinner cIcon yourSpell"></i>
+        </div>
+        <div class="VS">VS</div>
+
+        <div class="duelItem">
+          <p class="cSpellTitle">Enemy's Spell</p>
+          <i class="fa-solid fa-spinner cIcon enemySpell "></i>
+        </div>
+      </div>
+      <div class="duelLog">
+        <p class="rounds">Round: </p>
+        <p class="result">Your points: 0 | Enemy points: 0</p>
+        <p class="duelText"></p>
+      </div>
+
+      <div class="resultContent">
+        <p class="duelResult"></p>
+        <br>
+        <button class="playAgain">Duel Again!</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Created by AlessandroPitocchi</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
