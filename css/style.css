@@ -1,0 +1,240 @@
+body{
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #ebedee;
+  margin: 0px;
+  margin-left: 1%;
+  margin-right:1%;
+}
+
+.header{
+  text-align: center;
+  font-size: 22px;
+}
+
+.hatColor{
+  color: #1a37c9;
+}
+
+.fireColor{
+  color:#e71837;
+}
+
+.waterColor{
+  color:#6db1d8;
+}
+
+.leafColor{
+  color: #32b667;
+}
+
+.mainContent{
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 30px auto;
+  margin-bottom: 60px;
+}
+
+.instDiv{
+  text-align: center;
+  color: lightgray;
+}
+
+.spellsContent{
+  display: flex;
+  justify-content: space-evenly;
+  border: 4px solid gray;
+  border-radius: 5px;
+}
+
+.spellButton{
+  background-color: transparent;
+  border: none;
+}
+
+.spellIcon{
+  margin: 50px 0;
+  color: grey;
+  font-size: 70px;
+  transition: all .3s;
+}
+
+.spellIcon:hover{
+  cursor: pointer;
+  transform: scale(1.4);
+  transition: all .3s;
+}
+
+.fireIcon:hover{
+  color:#e71837;
+}
+
+.waterIcon:hover{
+  color:#60b5e5;
+}
+
+.leafIcon:hover{
+  color:#32b667;
+}
+
+.duelContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.duelSpell{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.duelItem{
+  transition: all .2s linear;
+  border: 4px solid gray;
+  border-radius: 5px;
+}
+
+.cSpellTitle{
+  margin: 19px 19px -30px 19px;
+  font-size: 19px;
+  text-align: center;
+  color: gray;
+}
+
+.cIcon{
+   margin: 50px 50px 40px 50px; 
+   font-size: 70px;
+   color: gray;
+}
+
+.VS{
+  text-align: center;
+  color: gray;
+  font-size: 45px;
+  margin: auto 0;
+}
+
+.duelLog{
+  border: 4px solid gray;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.resultContent{
+  text-align: center;
+}
+
+.duelResult{
+  margin: 0 20px;
+  font-size: 50px;  
+}
+
+.playAgain{
+  visibility: hidden;
+  font-family: 'Shadows Into Light', cursive;
+  width: 200px;
+  margin-bottom: 60px;
+  padding: 20px;
+  font-size: 25px;
+  color: gray;
+  border: 4px solid gray;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.playAgain:hover {
+  background-color: gray;
+  color: #fbfbf8;
+}
+
+footer{
+  text-align: center;
+  position: fixed;
+  background-color: #ebedee;
+  width: 98%;
+  bottom: 0px;
+  margin: 0px;
+  height: 60px;
+  color: gray;
+  border-top: 3px solid gray;
+}
+
+.disabledButton {
+  cursor: default;
+  transform: none;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.greenColor{
+  color: #32b667;
+}
+
+.redColor{
+  color: #e71837;
+}
+
+@media (max-width: 700px) {
+
+  h1 {
+    font-size: 26px;
+  }
+
+	.mainContent {
+    margin: 30px;
+    text-align: center;
+  }
+
+  .duelSpell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .spellIcon,
+  .cIcon {
+    font-size: 50px;
+    margin: 15px;
+  }
+
+  .duelItem{
+    width: 140px;
+    height: 140px;
+  }
+
+  .cSpellTitle{
+    margin: 10px auto;
+    font-size: 17px;
+  }
+
+  .spellIcon{
+    margin: 30px 0;
+  }
+
+  .cIcon{
+    margin-top: 10px;
+    width: 50px;
+  }
+
+  .VS{
+    text-align: center;
+    color: gray;
+    font-size: 30px;
+    margin: 19px;
+  }
+
+  .duelLog{
+    font-size: 20px;
+  }
+
+  .duelResult{
+    font-size: 24px;
+  }
+}

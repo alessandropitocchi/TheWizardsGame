@@ -1,1 +1,1 @@
-# TheWizardsGame
+# TheWizard'sGame
